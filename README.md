@@ -29,7 +29,7 @@
 <br/>
 
 <div align="center">
-  <img src="assets/demo_preview.png" alt="DenoiseRX Interactive Radiograph Restoration Viewer" width="92%" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.4);"/>
+  <img src="assets/figure1_denoiserx_demo.png" alt="DenoiseRX Interactive Radiograph Restoration Viewer" width="92%" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.4);"/>
   <p><em>Figure 1: Interactive radiograph restoration interface with real-time split-slider and quantitative metrics.</em></p>
 </div>
 
