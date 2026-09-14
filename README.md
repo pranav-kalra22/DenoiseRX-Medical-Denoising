@@ -10,6 +10,7 @@
 [![React 18](https://img.shields.io/badge/React-18-61DAFB.svg?logo=react&logoColor=black)](https://react.dev/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker&logoColor=white)](https://www.docker.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![CI Pipeline](https://github.com/pranav-kalra22/DenoiseRX-Medical-Denoising/actions/workflows/ci.yml/badge.svg)](https://github.com/pranav-kalra22/DenoiseRX-Medical-Denoising/actions/workflows/ci.yml)
 
 **A lightweight, deep learning-powered medical imaging platform engineered to restore low-dose, high-noise chest radiographs using a Nonlinear Activation-Free Network (NAFNet).**
 
@@ -24,6 +25,13 @@
 | **Trainable Parameters** | — | **2,941,889 (2.94M)** | Compact footprint |
 | **Model Checkpoint Size** | — | **11.22 MB** | Edge & CPU ready |
 | **Training Scale** | — | **8,000 NIH Chest X-rays** | 7,000 Train / 1,000 Val |
+
+<br/>
+
+<div align="center">
+  <img src="assets/demo_preview.png" alt="DenoiseRX Interactive Radiograph Restoration Viewer" width="92%" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.4);"/>
+  <p><em>Figure 1: Interactive radiograph restoration interface with real-time split-slider and quantitative metrics.</em></p>
+</div>
 
 </div>
 
@@ -172,6 +180,11 @@ DenoiseRX is architected as an asynchronous, decoupled microservice stack:
   ├── PyTorch NAFNet Inference Engine (CPU/CUDA auto-detect)
   └── In-Memory Background Job Execution Cache
 ```
+
+<div align="center">
+  <img src="assets/landing_preview.png" alt="DenoiseRX Landing Interface" width="92%" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.4);"/>
+  <p><em>Figure 2: DenoiseRX web platform landing overview and architecture showcase.</em></p>
+</div>
 
 ---
 
@@ -333,3 +346,10 @@ Comprehensive documentation files are available in the `docs/` folder:
 ## 📜 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📖 References & Acknowledgments
+
+* **NAFNet:** Chen, L., Lu, X., Zhang, J., Chu, X., & Chen, C. (2022). *Simple Baselines for Image Restoration*. In European Conference on Computer Vision (ECCV 2022).
+* **Dataset:** NIH Clinical Center. *ChestX-ray14: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases*.
