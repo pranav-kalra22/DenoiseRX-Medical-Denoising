@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:7860" # Maps local 8000 to the container's 7860
+    volumes:
+      - ./backend:/home/user/app
+    environment:
+      - ENVIRONMENT=development
+
+  frontend:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "5173:5173" # Vite default port
+    # Installs deps if missing, then runs Vite binding to all network interfaces
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    depends_on:
+      - backend

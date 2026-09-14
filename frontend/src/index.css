@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+  background-color: #000000;
+  color: #f8fafc;
+  /* Adds a subtle geometric medical grid over the pure black */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-attachment: fixed;
+}
+
+/* Smooth out the fonts */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

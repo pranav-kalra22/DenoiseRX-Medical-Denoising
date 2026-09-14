@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+slowapi
+torch
+torchvision
+pillow
+scikit-image
+scipy
+python-multipart
+httpx
+pytest
